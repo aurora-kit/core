@@ -1,0 +1,11 @@
+:root {
+  --sm: 40rem;
+  --md: 48.75rem;
+  --lg: 62rem;
+  --xl: 72.25rem;
+}
+
+@custom-media --media-sm (min-width: var(--sm, 40rem));
+@custom-media --media-md (min-width: var(--md));
+@custom-media --media-lg (min-width: var(--lg));
+@custom-media --media-xl (min-width: var(--xl));

@@ -1,0 +1,24 @@
+.ae-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+
+  @media (--media-sm) {
+    max-width: var(--sm);
+  }
+  @media (--media-md) {
+    max-width: var(--md);
+  }
+  @media (--media-lg) {
+    max-width: var(--lg);
+  }
+  @media (--media-xl) {
+    max-width: var(--xl);
+  }
+}
+
+.ae-container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+}
