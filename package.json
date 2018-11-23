@@ -7,6 +7,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "9.3.1",
+    "css-mqpacker": "7.0.0",
     "cssnano": "4.1.7",
     "postcss": "7.0.6",
     "postcss-calc": "7.0.1",
@@ -17,13 +18,14 @@
     "postcss-discard-comments": "4.0.1",
     "postcss-import": "12.0.1",
     "postcss-importantly": "0.0.7",
+    "postcss-nested": "4.1.0",
     "postcss-remove-root": "0.0.2",
     "postcss-reporter": "6.0.0"
   },
   "scripts": {
-    "build": "postcss src/aurora.css -d output --config postcss.config.js",
-    "minify": "postcss output/aurora.css -u cssnano -o output/aurora.min.css --no-map",
-    "start": "postcss src/aurora.css -d output --config postcss.config.js -w"
+    "build": "postcss src/aurora.css -d dist --config postcss.config.js",
+    "minify": "postcss dist/aurora.css -u cssnano -o dist/aurora.min.css --no-map",
+    "start": "postcss src/aurora.css -d dist --config postcss.config.js -w"
   },
   "files": [
     "output",
